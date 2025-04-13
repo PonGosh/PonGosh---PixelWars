@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Pongosh – Пиксельное приключение</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Простая стилизация страницы и canvas */
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fef9ea;
+      font-family: "Courier New", Courier, monospace;
+    }
+    canvas {
+      display: block;
+      margin: 0 auto;
+      border: 1px solid #000;
+    }
+    /* Панель управления, если нужна */
+    #controls {
+      text-align: center;
+      margin-top: 10px;
+    }
+    #controls button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- Холст для игры -->
+  <canvas id="gameCanvas" width="800" height="400"></canvas>
+  
+  <!-- Панель управления (эти кнопки используются в JS для паузы и сброса игры) -->
+  <div id="controls">
+    <button id="pauseButton">Пауза</button>
+    <button id="newRunButton">Новый забег</button>
+  </div>
+  
+  <!-- Подключение игрового скрипта -->
+  <script src="game.js"></script>
+</body>
+</html>
